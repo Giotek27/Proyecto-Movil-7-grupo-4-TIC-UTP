@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<resources>
-    <string-array name="nivel_ingles">
-        <item>Seleccione...</item>
-        <item>Bueno</item>
-        <item>Regular</item>
-        <item>No tan bueno</item>
-    </string-array>
-</resources>
