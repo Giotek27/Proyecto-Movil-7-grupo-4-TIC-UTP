@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context=".formularioCrear">
+
+    <TextView
+        android:id="@+id/textViewEProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear\nProducto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/nomProducEditar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="15dp"
+          android:hint="Nombre producto" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/TxtCantidadEditar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="15dp"
+          android:layout_weight="1"
+          android:ems="10"
+          android:hint="Cantidad"
+          android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/TextPrecioEditar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="15dp"
+          android:layout_weight="1"
+          android:ems="10"
+          android:hint="Precio"
+          android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewCategoriaEditar"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Seleccione la categoría del producto"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/lista_categorias" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+      <EditText
+          android:id="@+id/txtDescripcionEditprd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:ems="10"
+          android:gravity="top"
+          android:hint="Descripcion de el producto"
+          android:inputType="textMultiLine"
+          android:selectAllOnFocus="false"
+          android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp">
+
+      <EditText
+          android:id="@+id/txtgarantiasPrdEdit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:ems="10"
+          android:gravity="start|top"
+          android:hint="Escriba Las garantías del producto"
+          android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/TextViewInsertImgEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar Imagen"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="205dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/btnAgregarCrud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:elevation="5sp"
+        android:onClick="goToActivityCargar"
+        android:text="Agregar" />
+  </LinearLayout>
+</ScrollView>
