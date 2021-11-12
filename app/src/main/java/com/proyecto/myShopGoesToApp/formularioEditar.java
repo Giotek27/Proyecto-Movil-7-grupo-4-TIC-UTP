@@ -1,4 +1,4 @@
-package com.example.proyectoapp1;
+package com.proyecto.myShopGoesToApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.example.proyectoapp1.R;
 
 public class formularioEditar extends AppCompatActivity {
 

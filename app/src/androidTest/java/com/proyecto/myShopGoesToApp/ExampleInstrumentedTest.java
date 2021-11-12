@@ -1,4 +1,4 @@
-package com.example.proyectoapp1;
+package com.proyecto.myShopGoesToApp;
 
 import android.content.Context;
 

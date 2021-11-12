@@ -1,4 +1,4 @@
-package com.example.proyectoapp1;
+package com.proyecto.myShopGoesToApp;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.example.proyectoapp1.R;
 
 public class InicioCrud extends AppCompatActivity {
 

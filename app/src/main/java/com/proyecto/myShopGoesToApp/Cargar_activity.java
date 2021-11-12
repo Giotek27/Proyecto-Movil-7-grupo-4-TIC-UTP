@@ -1,4 +1,4 @@
-package com.example.proyectoapp1;
+package com.proyecto.myShopGoesToApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.example.proyectoapp1.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

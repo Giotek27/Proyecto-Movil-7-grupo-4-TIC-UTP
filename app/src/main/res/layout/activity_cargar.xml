@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Cargar_activity">
+    tools:context="com.proyecto.myShopGoesToApp.Cargar_activity">
 
     <TextView
         android:id="@+id/textView2"
