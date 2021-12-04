@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="lista_categorias">
-        <item></item>
+        <item>Seleccione...</item>
         <item>Ropa</item>
         <item>Accesorios</item>
         <item>Tecnología</item>

@@ -13,7 +13,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Cargar_activity extends AppCompatActivity {
-    private static final long SPLASH_SCREEN_DELAY=4000;
+    private static final long SPLASH_SCREEN_DELAY=2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class Cargar_activity extends AppCompatActivity {
         TimerTask timerTask= new TimerTask() {
             @Override
             public void run() {
-                Intent newIntent= new Intent(getApplicationContext(), InicioCrud.class);
+                Intent newIntent= new Intent(getApplicationContext(), formularioCrear.class);
                 startActivity(newIntent);
                 finish();
             }

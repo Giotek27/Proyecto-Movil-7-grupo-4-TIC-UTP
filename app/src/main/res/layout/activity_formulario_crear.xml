@@ -15,63 +15,51 @@
         android:id="@+id/textViewEProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crear\nProducto"
+        android:text="Gestionar\nProductos"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <com.google.android.material.textfield.TextInputLayout
+
+    <EditText
+        android:id="@+id/TxtnomproducCrear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nombre del producto"
+        android:inputType="textMultiLine" />
 
-      <com.google.android.material.textfield.TextInputEditText
-          android:id="@+id/nomProducEditar"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="20dp"
-          android:layout_marginTop="15dp"
-          android:layout_marginRight="20dp"
-          android:layout_marginBottom="15dp"
-          android:hint="Nombre producto" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
+        android:id="@+id/TxtCantidadCrear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number" />
 
-      <EditText
-          android:id="@+id/TxtCantidadEditar"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="20dp"
-          android:layout_marginRight="20dp"
-          android:layout_marginBottom="15dp"
-          android:layout_weight="1"
-          android:ems="10"
-          android:hint="Cantidad"
-          android:inputType="number" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
+        android:id="@+id/TextPrecioCrear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-      <EditText
-          android:id="@+id/TextPrecioEditar"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="20dp"
-          android:layout_marginRight="20dp"
-          android:layout_marginBottom="15dp"
-          android:layout_weight="1"
-          android:ems="10"
-          android:hint="Precio"
-          android:inputType="number" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="number" />
 
     <TextView
-        android:id="@+id/textViewCategoriaEditar"
+        android:id="@+id/textViewCategoriaCrear"
         android:layout_width="match_parent"
         android:layout_height="29dp"
         android:layout_marginLeft="20dp"
@@ -80,7 +68,7 @@
         android:textSize="20sp" />
 
     <Spinner
-        android:id="@+id/spinnerEditar"
+        android:id="@+id/spinnerCrear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -88,67 +76,77 @@
         android:layout_marginBottom="20dp"
         android:entries="@array/lista_categorias" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
+        android:id="@+id/txtDescripcionCrear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp">
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Descripcion de el producto"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="false"
+        android:textSize="16sp" />
 
-      <EditText
-          android:id="@+id/txtDescripcionEditprd"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:ems="10"
-          android:gravity="top"
-          android:hint="Descripcion de el producto"
-          android:inputType="textMultiLine"
-          android:selectAllOnFocus="false"
-          android:textSize="16sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
+        android:id="@+id/txtgarantiasPrdcrear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="10sp">
-
-      <EditText
-          android:id="@+id/txtgarantiasPrdEdit"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:ems="10"
-          android:gravity="start|top"
-          android:hint="Escriba Las garantías del producto"
-          android:inputType="textMultiLine" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Escriba Las garantías del producto"
+        android:inputType="textMultiLine" />
 
     <TextView
-        android:id="@+id/TextViewInsertImgEdit"
+        android:id="@+id/TextViewInsertImgCrear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Insertar Imagen"
         android:textAlignment="center"
         android:textSize="16sp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="205dp"
-        android:layout_height="74dp"
-        android:layout_marginLeft="100sp"
-        android:layout_marginRight="100sp"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+      <ImageButton
+          android:id="@+id/btnCamara"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="100sp"
+          android:layout_marginRight="100sp"
+          app:srcCompat="@android:drawable/ic_menu_camera" />
+
+      <ImageButton
+          android:id="@+id/btn_galeria"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:onClick="abrirGaleria"
+          app:srcCompat="@android:drawable/ic_menu_gallery" />
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/imageViewCrear"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter" />
 
     <Button
-        android:id="@+id/btnAgregarCrud"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20sp"
-        android:elevation="5sp"
-        android:onClick="goToActivityCargar"
-        android:text="Agregar" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:onClick="limpiarcampos"
+        android:text="Limpiar campos" />
+
   </LinearLayout>
 </ScrollView>

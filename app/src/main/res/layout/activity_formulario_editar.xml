@@ -12,7 +12,7 @@
         tools:context="com.proyecto.myShopGoesToApp.formularioEditar">
 
         <TextView
-            android:id="@+id/textViewCProduct"
+            android:id="@+id/textViewEditarProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Editar\nProducto"
@@ -21,57 +21,45 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputLayout
+
+        <EditText
+            android:id="@+id/TxtnomproducEditar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nombre del producto"
+            android:inputType="textMultiLine" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nomProducCrear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="15dp"
-                android:hint="Nombre producto" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/TxtCantidadEditar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="number" />
 
-            <EditText
-                android:id="@+id/TxtCantidad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Cantidad"
-                android:inputType="number" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/TextPrecioEditar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/TextPrecio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Precio"
-                android:inputType="number" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="number" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewCategoriaEditar"
             android:layout_width="match_parent"
             android:layout_height="29dp"
             android:layout_marginLeft="20dp"
@@ -80,7 +68,7 @@
             android:textSize="20sp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -88,67 +76,76 @@
             android:layout_marginBottom="20dp"
             android:entries="@array/lista_categorias" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/txtDescripcionEditar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp">
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Descripcion de el producto"
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="false"
+            android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/txtDescripcionCrearPrd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="top"
-                android:hint="Descripcion de el producto"
-                android:inputType="textMultiLine"
-                android:selectAllOnFocus="false"
-                android:textSize="16sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/txtgarantiasPrdEditarr"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp"
-            android:layout_marginBottom="10sp">
-
-            <EditText
-                android:id="@+id/txtgarantiasPrdCrear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="Escriba Las garantías del producto"
-                android:inputType="textMultiLine" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Escriba Las garantías del producto"
+            android:inputType="textMultiLine" />
 
         <TextView
-            android:id="@+id/TextViewInsertImg"
+            android:id="@+id/TextViewInsertImgEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Insertar Imagen"
             android:textAlignment="center"
             android:textSize="16sp" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="205dp"
-            android:layout_height="74dp"
-            android:layout_marginLeft="100sp"
-            android:layout_marginRight="100sp"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/btnCamaraEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100sp"
+                android:layout_marginRight="100sp"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <ImageButton
+                android:id="@+id/btn_galeriaEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="abrirGaleriaedit"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/imageViewEditar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter" />
 
         <Button
-            android:id="@+id/btnAgregarCrud"
+            android:id="@+id/btnEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20sp"
             android:elevation="5sp"
-            android:onClick="goToActivityCargar"
-            android:text="Agregar" />
+            android:onClick="EditarProducto"
+            android:text="Editar" />
+
     </LinearLayout>
 </ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "739990300679",
+    "project_id": "proyecto-myshopgoestoapp",
+    "storage_bucket": "proyecto-myshopgoestoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739990300679:android:6f0d19f184e8d6a33562a2",
+        "android_client_info": {
+          "package_name": "com.proyecto.myShopGoesToApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739990300679-2rah2ngva7il97usr6vrt8hml9p73j30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY-zZxP_sHXaYmFpMKPOpPRKuAXinNeXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739990300679-2rah2ngva7il97usr6vrt8hml9p73j30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

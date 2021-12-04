@@ -17,9 +17,8 @@ public class confirmacionEliminado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_confirmacion_eliminado);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-    public void goToActivityCargar(View view){
+    public void ConfirmarEliminado(View view){
         Intent newIntent=new Intent(this, Cargar_activity.class);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
         startActivity(newIntent);
